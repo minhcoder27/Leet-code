@@ -7,8 +7,8 @@
 // @lc code=start
 class Solution {
 public:
+    int dp[1005][1005];
     string longestPalindrome(string s) {
-        int dp[1005][1005];
         memset(dp,0,sizeof(dp));
         int n = s.size();
         s = " "+s;
@@ -35,6 +35,7 @@ public:
                 }
             }
         }
+        return "";
 
 
     }
